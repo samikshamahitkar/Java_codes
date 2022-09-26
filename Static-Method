@@ -1,0 +1,35 @@
+//A static method can access static data member and can change the value of it.
+
+
+public class Main {
+   static String clg="BVP";
+   int roll;
+   String name;
+   
+  static void staticFun(){
+      clg="IIM"; //A static method can access static data member and can change the value of it.
+  }
+  
+  Main(int roll, String name){
+      this.roll=roll;
+      this.name=name;
+  }
+  
+  void display(){
+    System.out.println(roll+"  "+name+"  "+clg);  
+  }
+   
+  public static void main(String args[]) {
+    
+    Main.staticFun();
+    Main m1=new Main(1,"Sam");
+    Main m2=new Main(2,"Sami");
+    Main m3=new Main(3,"Samiksha");
+    
+    m1.display();
+    m2.display();
+    m3.display();
+    
+    
+  }
+}
