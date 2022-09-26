@@ -1,0 +1,26 @@
+//this: to invoke current class method
+
+
+public class Main {
+   static String clg="BVP";
+   String name;
+   int roll;
+  
+  void Fun(){
+      System.out.println("Hii");
+  }
+  
+  void display(int r,String n){
+    roll=r;
+    name=n;
+    this.Fun();              // this: to invoke current class method
+    System.out.println(roll+"  "+name+"  "+clg);  
+  }
+   
+  public static void main(String args[]) {
+    Main m3=new Main();
+    m3.display(3,"Samiksha");
+    
+    
+  }
+}
