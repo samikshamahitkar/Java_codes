@@ -1,4 +1,6 @@
 //A static method can access static data member and can change the value of it.
+// non-static variable roll cannot be referenced from a static context
+  
 
 
 public class Main {
